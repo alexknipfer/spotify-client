@@ -4,7 +4,7 @@ import * as express from 'express'
 import resolvers from './resolvers'
 import typeDefs from './schemas'
 import { spotifyAuthRoutes } from './routes/spotifyAuthRoutes'
-import { appConfig } from './config/AppConfig'
+import { appConfig } from './config/appConfig'
 
 const app = express()
 

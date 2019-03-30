@@ -1,5 +1,5 @@
 import * as express from 'express'
-import { appConfig } from '../config/AppConfig'
+import { appConfig } from '../config/appConfig'
 
 const router = express.Router()
 

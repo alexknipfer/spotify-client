@@ -2,6 +2,13 @@
   "name": "client",
   "version": "0.1.0",
   "private": true,
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "format": "prettier --write \"**/*.{tsx,ts,css,scss,md,js,json,html}\""
+  },
   "dependencies": {
     "@types/jest": "24.0.11",
     "@types/node": "11.12.2",
@@ -12,11 +19,8 @@
     "react-scripts": "2.1.8",
     "typescript": "3.4.1"
   },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+  "devDependencies": {
+    "prettier": "^1.16.4"
   },
   "eslintConfig": {
     "extends": "react-app"

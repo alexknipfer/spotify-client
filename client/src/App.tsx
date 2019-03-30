@@ -1,5 +1,5 @@
-import React from "react";
+import React from 'react'
 
 export function App() {
-  return <h3>Spotify Client</h3>;
+  return <h3>Spotify Client</h3>
 }

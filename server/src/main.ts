@@ -1,16 +1,14 @@
 import { ApolloServer } from 'apollo-server-express'
 import * as express from 'express'
 
-import resolvers from './resolvers'
-import typeDefs from './schemas'
 import { spotifyAuthRoutes } from './routes/spotifyAuthRoutes'
 import { appConfig } from './config/appConfig'
+import { schema } from './schema'
 
 const app = express()
 
 const server = new ApolloServer({
-  resolvers,
-  typeDefs,
+  schema,
   introspection: appConfig.introspectionEnabled,
   playground: appConfig.graphqlPlaygroundEnabled
 })

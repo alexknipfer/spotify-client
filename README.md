@@ -1,3 +1,1 @@
-# apollo-quickstart
-
-Apollo and typescript quickstart
+# spotify-client-server

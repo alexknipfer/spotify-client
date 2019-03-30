@@ -1,14 +1,14 @@
 {
-  "name": "apollo-quickstart",
+  "name": "spotify-client-server",
   "version": "0.0.1",
-  "author": "Tyler Knipfer <knipferrc@gmail.com>",
-  "description": "Apollo and typescript starter",
+  "author": "Alex Knipfer <alexanderknipfer@gmail.com>",
+  "description": "Apollo GraphQL server for spotify client",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/knipferrc/apollo-quickstart.git"
+    "url": "git+https://github.com/alexknipfer/spotify-client-server.git"
   },
   "bugs": {
-    "url": "https://github.com/knipferrc/apollo-quickstart/issues"
+    "url": "https://github.com/alexknipfer/spotify-client-server/issues"
   },
   "keywords": [
     "apollo",
@@ -20,7 +20,7 @@
     "dev": "run-p build:dev start",
     "build:dev": " webpack --config webpack.development.js",
     "build:prod": "webpack --config webpack.production.js",
-    "start": "wait-on dist/main && node --require dotenv/config dist/main",
+    "start": "node --require dotenv/config dist/main",
     "format": "prettier --write \"**/*.{tsx,ts,css,scss,md,js,json,html}\""
   },
   "devDependencies": {
@@ -38,7 +38,8 @@
     "webpack-node-externals": "^1.7.2"
   },
   "dependencies": {
-    "apollo-server": "^2.4.8",
+    "apollo-server-express": "^2.4.8",
+    "express": "^4.16.4",
     "graphql": "^14.2.0"
   }
 }

@@ -1,3 +1,5 @@
+import { appConfig } from './config/AppConfig'
+
 const defaultPort = 4000
 
 interface Environment {
@@ -10,8 +12,8 @@ interface Environment {
 
 export const environment: Environment = {
   apollo: {
-    introspection: process.env.APOLLO_INTROSPECTION === 'true',
-    playground: process.env.APOLLO_PLAYGROUND === 'true'
+    introspection: appConfig.introspectionEnabled,
+    playground: appConfig.graphqlPlaygroundEnabled
   },
   port: process.env.PORT || defaultPort
 }

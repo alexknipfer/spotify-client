@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react'
-import { createGlobalStyle } from 'styled-components'
+import { createGlobalStyle, ThemeProvider } from 'styled-components'
 import { Router } from '../../router'
+import { theme } from '../../lib/theme'
 
 const GlobalStyle = createGlobalStyle`
   html, body, main, #root {
@@ -14,9 +15,11 @@ const GlobalStyle = createGlobalStyle`
 
 export function App() {
   return (
-    <Fragment>
-      <GlobalStyle />
-      <Router />
-    </Fragment>
+    <ThemeProvider theme={theme}>
+      <Fragment>
+        <GlobalStyle />
+        <Router />
+      </Fragment>
+    </ThemeProvider>
   )
 }

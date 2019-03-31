@@ -3,11 +3,9 @@ interface RequestTokenArgs {
 }
 
 export const requestTokens = (
-  parent: undefined | null,
+  parent: null | undefined,
   args: RequestTokenArgs
 ) => {
-  console.log(args)
-
   return {
     accessToken: 'test access token'
   }
